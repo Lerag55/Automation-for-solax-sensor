@@ -1,0 +1,14 @@
+- id: '1695376586297'
+  alias: Bojler2
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.solax_pv_power_total
+    above: 1000
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 297d7f47cca7e0e991e056a20dfffb4f
+    entity_id: eb2ce626f51ff85b916f87ef82c4e35f
+    domain: switch
+  mode: single
